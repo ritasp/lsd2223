@@ -1,0 +1,45 @@
+p{
+    color: rgb(255, 177, 33);
+    font-size: 24px;
+}
+
+.caixa-1{
+    /* aqui defino uma classe */
+    /* background: red !important */
+    background: rgb(113, 21, 113);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+            
+.caixa-2{
+   /* aqui defino uma classe */
+    background: rgb(83, 139, 83) !important;
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+
+.caixa-1 p{
+    color: aqua;
+}
+
+.caixa-2 p{
+    color: orange;
+    font-size: 8px;
+}
+
+.caixa-especial{
+    background: olive;
+}
+
+.caixa-4, .caixa-5{
+    background: brown;
+    width: 500px;
+    height: 600px;
+    margin: 20px;
+}
+
+.caixa-5{
+    background: yellow;
+}
