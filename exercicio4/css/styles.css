@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+}
+
+.caixa{
+    min-width: 300px;
+    width: calc(50%-40px);
+    height: 200px;
+    margin: 10px 20px;
+    float: left;
+}
+
+.caixa:hover{
+    background: yellow;
+}
+         
+.cx-1{
+    background: #f0f0f0;
+}
+
+.cx-2{
+    background: #ea1245;
+}
+
+.caixa p{
+    font-size: 16px;
+}
+
+.cx-1 p{
+    color: blue;
+}
+
+.cx-2 p{
+    color: orange;
+}
+
+.cx-1 a:hover{
+    color:  #f0f0f0;
+    background: #ea1245;
+}
+
+.cx-2 a:hover{
+    color: #ea1245;
+    background: #f0f0f0;
+}
