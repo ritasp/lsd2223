@@ -1,0 +1,20 @@
+.cx-3{
+    width: 100px;
+    height: 18px;
+    background: yellow;
+    overflow: hidden;
+}
+
+.cx-3:hover{
+    animation: animaMenu 3s forwards;
+    cursor: pointer;
+}
+
+@keyframes animaMenu{
+    from{
+        height: 18px;
+    }
+    to{
+        height: 60px;
+    }
+}
