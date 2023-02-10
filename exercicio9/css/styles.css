@@ -1,0 +1,15 @@
+input{
+    background: orange;
+}
+
+input[name=nome_inserido]{
+    background: cyan;
+}
+
+input[name=pass_inserida]{
+    background: salmon;
+}
+
+#pass_utilizador{
+    width: 300px;
+}

@@ -9,7 +9,7 @@ body{
     background: grey;
     color: #000;
     font-size: 20px;
-    font-family: 'Arial, Helvetica, sans-serif';
+    font-family: "Open Sans",'Arial','Helvetica','sans-serif';
 }
 
 .wrapper{
@@ -29,6 +29,12 @@ header{
     width: 20%;
     height: 44px;
     float: left; 
+}
+
+.icon-menu-principal{
+    font-size: 30px;
+    color:#767d85;
+    padding: 10px;
 }
 
 .col-2{
@@ -70,7 +76,7 @@ header{
     background-size: cover;
 }
 
-.hero__info{
+.hero-content{
     width: 50%;
     min-height: 150px;
     margin-inline: auto;
@@ -78,19 +84,20 @@ header{
     text-align: center;
 }
 
-.hero__info .title{
+.hero-content .title{
     color: #25A2C3;
-    margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 22px;
+    padding: 10px 0;
 }
 
-.hero__info .description{
+.hero-content .description{
     color: #000000;
-    margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
 }
 
-.hero__info .btn{
+.hero-content .btn{
     padding: 12px 30px;
     border-radius: 5px;
     border: none;
@@ -105,29 +112,147 @@ header{
 .articles{
     background: white;
     width: 100%;
-    height: 200px;
+    height: 500px;
     float: left; 
+}
+
+.articles .center-articles{
+    background: white;
+    width: 70%;
+    height: 500px;
+    margin-left: 15%;
+}
+
+.articles .col1,
+.articles .col2,
+.articles .col3{
+    width: 33.33%;
+    float: left; 
+}
+
+.articles .col1 h2,
+.articles .col3 h2{
+    color: #25A2C3;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.articles .col3 h2{
+    text-align: left;
+}
+
+.center-articles .col1 div,
+.center-articles .col3 div{
+    width: 70%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.center-articles .col3 div{
+    float: left;
+}
+
+.center-articles .col1 p{
+    text-align: right;
+    color: #767d85;
+}
+
+.center-articles .col3 p{
+    text-align: left;
+    color: #767d85;
+}
+
+.center-articles .col2 .moldura{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.center-articles .col2 .moldura img{
+    width: 100%;
 }
 
 /* HIGHLIGHTS SECTION */
 .highlights{
-    background: purple;
+    background: #F6755E;
     width: 100%;
     height: 200px;
     float: left; 
+    color: white;
+    text-align: center;
+}
+
+.highlights h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlights p:nth-child(2){
+    font-style: italic;
+}
+
+.highlights p span{
+    font-weight: bold;
 }
 
 /* LATEST NEWS SECTION */
 .latest-news{
     background: white;
     width: 100%;
-    height: 250px; 
     float: left;
+    padding: 80px 0;
+}
+
+.news-columns{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.news-columns .col1,
+.news-columns .col2,
+.news-columns .col3{
+    width: calc(33.33% - 22px);
+    float: left; 
+    height: 400px;
+    border: 1px solid #767d85;
+    margin: 0 10px;
+}
+
+.news-columns img{
+    width: 100%;
+}
+
+.news-columns div h3{
+    color: #25A2C3;
+    font-weight: bold;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.news-columns div p{
+    padding: 20px;
+    text-align: left;
+    color: #767d85;
 }
 
 footer{
-    background: turquoise;
+    background: #25A2C3;
     width: 100%;
     height: 150px;
     float: left; 
+    text-align: center;
+    color: #fff;
+}
+
+.footer h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer p span{
+    color: #F6755E;
 }

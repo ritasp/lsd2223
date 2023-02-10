@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="regista.php" method="get">
+        <ul>
+            <li>
+                <label for="nome_utilizador">Nome:</label>
+                <input type="text" id="nome_utilizador" name="nome_inserido" required placeholder="Inserir o nome">
+            </li>
+            <li>
+                <label for="nome_utilizador">Password:</label>
+                <input type="password" id="pass_utilizador" name="pass_inserida">
+            </li>
+            <li>
+                <label>Género:</label>
+                M <input type="radio" name="genero_inserido" value="Masculino">
+                F <input type="radio" name="genero_inserido" value="Feminino">
+                O <input type="radio" name="genero_inserido" value="Outro">
+            </li>
+            <li>
+                Interesses:
+                Cinema <input type="checkbox" name="interesses[]" value="Cinema"><br>
+                Música <input type="checkbox" name="interesses[]" value="Música"><br>
+                Arte <input type="checkbox" name="interesses[]" value="Arte"><br>
+            </li>
+            <li>
+                Distrito:
+                <select name="distrito_inserido">
+                    <option value="Lx">Lisboa</option>
+                    <option value="Prt">Porto</option>
+                    <option value="Cbr">Coimbra</option>
+                </select>
+            </li>
+            <li>
+                Email:
+                <input type="email" name="email_inserido">
+            </li>
+            <li>
+                <button>ENVIAR</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
