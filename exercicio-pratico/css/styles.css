@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Glyphicons-halflings-regular';
+    src: url('../fonts/glyphicons-halflings-regular.ttf');
+}
+
+.wrapper{
+    width: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background: white;
+    width: 80%;
+    height: 44px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+}
+
+.logo{
+    float: left;
+    color: #DD845B;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.menu{
+    float: right;
+    color: #959595;
+    background-color: white;
+    font-size: 16px;
+}
+
+.menu ul{
+    float: right;
+}
+
+.menu li{
+    float: left;
+    height: 20px;
+    margin: 10px;
+}
+
+.menu a{
+    font-size: 12px;
+}
+
+.banner{
+    background: white url('../images/light_bulb.jpg') top center no-repeat;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    float: left;
+}
+
+.banner-content{
+    width: 80%;
+    margin-left: 10%;
+    min-height: 150px;
+    margin-inline: auto;
+    margin-top: 100px;
+    text-align: left;
+    color: white;
+    line-height: 50px;
+}
+
+.banner-content .title{
+    font-size: 48px;
+}
+
+.banner-content .btn{
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #FEA500;
+    color: #fff;
+}
+
+.superior-quality{
+    background: white;
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    padding-block: 20px;
+    float: left;
+}
+
+.superior-quality-content{
+    padding-top: 30px;
+}
+
+.superior-quality h2{
+    text-align: center;
+    color: #DD845B;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.superior-quality p{
+    text-align: center;
+    color: #959595;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.values{
+    background: green;
+    width: 100%;
+    height: 200px;
+    float: left;
+    border-radius: 50%;
+}
+
+.values .image1,
+.values .image2,
+.values .image3{
+    width: 33.33%;
+    float: left; 
+}
+
+.world-class-products{
+    background: yellow;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.unparalleled-service{
+    background: purple;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.find-us{
+    background: yellow;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.contact{
+    background: purple;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.footer{
+    background: yellow;
+    width: 100%;
+    height: 200px;
+    float: left;
+}
