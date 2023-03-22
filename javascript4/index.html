@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="formulario">
+            <form onsubmit="return validaIdade()" action="bemvindo.html">
+                <ul>
+                    <li>Ano de Nascimento: <input type="text" id="ano"></li>
+                </ul>
+                <button>Submeter</button>
+            </form>
+        </div>
+        <div id="erros"></div>
+    </div>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

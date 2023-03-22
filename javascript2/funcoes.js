@@ -34,7 +34,7 @@ function calculaMedia(lista){
     }
 
 function fazAcaoDoBotao(){
-    alert("carreguei no botao");
+    //alert("carreguei no botao");
 
     var dado_inserido=document.getElementById('lista_de_numeros').value;
     console.log(dado_inserido);
@@ -42,6 +42,7 @@ function fazAcaoDoBotao(){
     var dado_inserido_convertido=dado_inserido.split(',');
 
     resultado=calculaMedia(dado_inserido_convertido);
-    alert(resultado);
-
+    //alert(resultado);
+    //escrever numa zona específica da página
+    document.getElementById("zona-de-resultado").innerText="A média é: "+resultado;
 }
