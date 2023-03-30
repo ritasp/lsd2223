@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New', Courier, monospace
+}
+
+.wrapper{
+    width: 70%;
+    padding: 20px;
+    margin: 0 15%;
+    float: left;
+    border: 1px solid grey;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 40px;
+}
+
+.resultado{
+    width: 70%;
+    padding: 20px;
+    margin: 0 15%;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid grey;
+}
