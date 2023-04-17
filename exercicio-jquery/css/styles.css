@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    padding: 20px;
+    margin-left: 15%;
+}
+
+.inputSelecionado{
+    background-color: orange;
+    text-transform: uppercase;
+}

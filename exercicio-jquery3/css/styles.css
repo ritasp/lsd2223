@@ -1,0 +1,41 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    display: none;
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    display: none;
+}
+
+.cx-1{
+    background-color: red;
+}
+
+.cx-2{
+    background-color: orange;
+}
+
+.cx-3{
+    background-color: lightcoral;
+}
+
+.cx-4{
+    background-color: plum;
+}

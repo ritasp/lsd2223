@@ -1,0 +1,37 @@
+.wrapper{
+    width: 100%;
+    float: left;
+}
+
+.algarismos{
+    width: 50%;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.operadores{
+    width: 50%;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resultado{
+    width: 100%;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.algarismos button{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.operadores button{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    margin-left: -540px;
+    font-family: 'Courier New', Courier, monospace;
+}
