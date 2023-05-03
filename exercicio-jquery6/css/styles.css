@@ -1,0 +1,39 @@
+body{
+    background: grey;
+}
+
+.slick-dots li.slick-active button:before{
+    color: whitesmoke;
+}
+
+.slick-dots li button:before{
+    color: black;
+}
+
+.autoplay{
+    width: 70%;
+    margin-left: 15% ;
+    float: left;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+
+.caixa3{
+    background-image: url("../images/pexels-david-selbert-8100784.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 619px;
+}
+
+.texto{
+    color: white;
+    text-align: center;
+}
