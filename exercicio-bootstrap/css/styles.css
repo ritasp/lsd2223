@@ -1,0 +1,31 @@
+.cx-1{
+    background: orange;
+}
+
+.cx-2{
+    background: lightcoral;
+}
+
+.cx-3{
+    background: plum;
+}
+
+.wrapper2{
+    margin-top: 20px;
+}
+
+.coluna-1{
+    background-color: aqua;
+}
+
+.coluna-2{
+    background-color: lightblue;
+}
+
+.coluna-3{
+    background-color: lightgray;
+}
+
+.cx-principal{
+    border: 1px solid grey;
+}
