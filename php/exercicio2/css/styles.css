@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+}
+
+ul, li{
+    list-style: none;
+    color: black;
+}
+
+.par{
+    background-color: greenyellow;
+}
+
+.impar{
+    background-color: indianred;
+}
