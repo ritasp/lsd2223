@@ -312,5 +312,30 @@ border-right:none;
 #menu-container ul li:first-child {
 	font-size:18px;
 	text-align:left;
-	
+}
+
+.conteudo-lista{
+	width: 100%;
+	float: left;
+}
+
+.detalhe-livro{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+}
+
+.capa{
+	width: 50%;
+	float: left;
+}
+
+.informacao{
+	width: calc(50% - 20px);
+	padding: 10px;
+	float: left;
+}
+
+.capa img{
+	width: 100%;
 }
