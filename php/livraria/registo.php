@@ -2,7 +2,7 @@
     <form method="post" action="insereCliente.php">
     <ul>
         <li> Nome: <input type="text" name="nome"></li>
-        <li> Email: <input type="text" name="email"></li>
+        <li> Email: <input type="text" name="email" onfocus="limpaAvisos();" onblur="verificaEmail()"></li>
         <li> Telefone: <input type="text" name="telefone"></li>
         <li> Morada: <input type="text" name="morada"></li>
         <li> CC: <input type="text" name="cc"></li>
@@ -17,3 +17,4 @@
         echo "Registo efetuado com sucesso!";
     }
 ?>
+<div class="zona-de-mensagens"></div>
