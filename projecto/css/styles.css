@@ -1,19 +1,477 @@
+@font-face{
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat-Bold.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat Bold Italic';
+    src: url('../fonts/Montserrat-BoldItalic.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat Italic';
+    src: url('../fonts/Montserrat-Italic.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat Semi Bold';
+    src: url('../fonts/Montserrat-SemiBold.otf');
+}
+
+@font-face{
+    font-family: 'Montserrat Semi Bold Italic';
+    src: url('../fonts/Montserrat-SemiBoldItalic.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Bold';
+    src: url('../fonts/NeueMontreal-Bold.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Bold Italic';
+    src: url('../fonts/NeueMontreal-BoldItalic.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Italic';
+    src: url('../fonts/NeueMontreal-Italic.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Light';
+    src: url('../fonts/NeueMontreal-Light.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Light Italic';
+    src: url('../fonts/NeueMontreal-LightItalic.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Medium';
+    src: url('../fonts/NeueMontreal-Medium.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Medium Italic';
+    src: url('../fonts/NeueMontreal-MediumItalic.otf');
+}
+
+@font-face{
+    font-family: 'Neue Montreal Regular';
+    src: url('../fonts/NeueMontreal-Regular.otf');
+}
+
+body{
+    font-family: 'Montserrat Regular';
+}
+
 .wrapper{
-    width:100%;
-    height:3000px;
-    background-color: orange;
+    width: 100vw;
+}
+
+/* HEADER & HERO SECTION */
+.header{
+    width: 100%;
+    position: fixed;
+}
+
+.hero header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    position: fixed;
+}
+
+.hero nav li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.hero nav li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero nav{
+    width: 100%;
+}
+
+.menu-desktop{
+    float: left;
+    margin-top: 16px;
+}
+
+.adjust-header{
+    margin-left: -20px;
+}
+
+.col-1{
+    margin-top: 25px;
+    width: 575.94px;
+}
+
+.col-2{
+    text-align: center;
+    width: calc(50% - 287.97px);
+}
+
+.col-3{
+    text-align: right;
+    margin-left: -40px;
+    margin-top: 25px;
+    width: calc(50% - 287.97px);
+}
+
+.button-idioma{
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 20px;
+    padding: 5px 20px;
+    margin-left: 5px;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid white;
+    cursor: pointer;
+}
+
+.button-idioma:hover{
+    background-color: white;
+    color: black;
 }
 
 .hero{
-    width: 100vw;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    color: white;
+    font-size: 48px;
+    position: relative;
     height: 100vh;
-    background-color: gray;
+    line-height: 110%;
 }
-header{
+
+.hero h1 span{
+    font-family: 'Neue Montreal Bold';
+}
+
+.hero-button{
+    margin-top: 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 30px;
+    padding: 5px 24px;
+    border: none;
+}
+
+.hero-button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.hero-content{
+    width: 50%;
+    margin: 400px 25%;
+}
+
+/* SUBHERO LAVENDER & MULTIFLORAL HONEY SECTION */
+.subhero-section .content{
+    padding: 100px 50px;
+    width: calc(50% - 100px);
+    background: #F0E7D1;
+    float: left;
+    height: 400px;
+}
+
+.subhero-section .content h1{
+    font-size: 48px;
+    font-family: 'Neue Montreal Bold';
+    margin-top: 10px;
+}
+
+.subhero-section .content p{
+    line-height: 180%;
+    margin-top: 50px;
+}
+
+.subhero-section p span{
+    font-family: 'Montserrat Italic';
+}
+
+.subhero-section p .bold{
+    font-family: 'Montserrat Semi Bold';
+}
+
+.button-bw{
+    margin-top: 50px;
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 30px;
+    padding: 5px 24px;
+    border: none;
+}
+
+.button-bw:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.subhero-section .image{
+    width: 50%;
+    background: white;
+    float: left;
+    height: 600px;
+}
+
+/* TESTEMONIALS SECTION */
+.testemonials{
+    background-color: white;
+    width: 90%;
+    float: left;
+    margin: 0 5%;
+    padding: 70px 100px;
+    text-align: center;
+}
+
+.testemonials .review{
+    padding: 20px;
+    line-height: 150%;
+    font-size: 18px;
+    font-family: 'Neue Montreal Regular';
+}
+
+.testemonials .name{
+    line-height: 150%;
+    font-size: 16px;
+    font-family: 'Montserrat Semi Bold';
+}
+
+.testemonials .location{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
+
+.slick-dots{
     position: relative;
 }
 
-.agregador{
-    position: absolute;
-    top:0
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
+/* BENEFITS SECTION */
+.benefits{
+    background-color: #CFC1AB;
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+}
+
+.benefits-columns{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.benefits-columns .col-1,
+.benefits-columns .col-2,
+.benefits-columns .col-3,
+.benefits-columns .col-4{
+    width: calc(25% - 40px);
+    float: left; 
+    margin: 0 20px;
+}
+
+.benefits-columns img{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.benefits-columns div h3{
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    font-size: 18px;
+}
+
+.benefits-columns div p{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/* FOOTER */
+.footer{
+    background: #F0E7D1;
+    width: 100%;
+    height: 360px;
+    float: left;
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+}
+
+.footer .col1{
+    width: 40%;
+    float: left;
+}
+
+.footer .col2,
+.footer .col3,
+.footer .col4{
+    width: calc(20% - 40px);
+    float: left; 
+    margin: 0 20px;
+    line-height: 35px;
+}
+
+.footer .col3{
+    margin-top: 50px;
+}
+
+.credits{
+    width: 100%;
+    float: left;
+    border-top: 1px solid black;
+    margin-top: 60px;
+    padding-top: 10px;
+}
+
+.copyright{
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.copyright span{
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.socials{
+    float: right;
+    text-align: right;
+}
+
+.icon-socials-fb{
+    float: left;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.icon-socials-insta{
+    float: left;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.icon-socials-in{
+    float: left;
+    cursor: pointer;
+}
+
+.full-content{
+    padding: 60px 60px 35px 60px;
+}
+
+.footer .content h3{
+    font-family: 'Neue Montreal Medium';
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.footer .content a{
+    font-size: 15px;
+    line-height: 150%;
+    color: #000;
+}
+
+.footer .content li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.menu-mobile{
+    display: none;
+
+}
+
+.menu-mobile-content{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.item-menu-mobile{
+    background: red;
+    width: 100%;
+    margin-top: 0px;
+}
+
+/* SE O ECRÃ TIVER NO MÁX 1180px*/
+@media screen and (max-width:1180px) {
+    .header{
+        background-color: #F0E7D1;
+        width: calc(50% - 20px);
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+}
+
+/* SE O ECRÃ TIVER NO MÁX 750px*/
+@media screen and (max-width:750px) {
+    .header{
+        background-color: #F0E7D1;
+        width: calc(100% - 60px);
+        margin: 30px;
+        font-size: 20px;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-desktop{
+        display: none;
+    }
 }
