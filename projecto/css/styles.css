@@ -76,7 +76,7 @@ body{
     width: 100vw;
 }
 
-/* HEADER & HERO SECTION */
+/* HEADER & HERO SECTION HOMEPAGE */
 .header{
     width: 100%;
     position: fixed;
@@ -92,7 +92,7 @@ body{
 }
 
 .hero nav li{
-    width: 20%;
+    width: 120px;
     float: left;
     text-align: center;
 }
@@ -117,19 +117,19 @@ body{
 
 .col-1{
     margin-top: 25px;
-    width: 575.94px;
+    width: 40%;
 }
 
 .col-2{
     text-align: center;
-    width: calc(50% - 287.97px);
+    width: 20%;
 }
 
 .col-3{
     text-align: right;
     margin-left: -40px;
     margin-top: 25px;
-    width: calc(50% - 287.97px);
+    width: 40%;
 }
 
 .button-idioma{
@@ -215,7 +215,7 @@ body{
 
 .subhero-section .content p{
     line-height: 180%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .subhero-section p span{
@@ -227,7 +227,7 @@ body{
 }
 
 .button-bw{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 14px;
     border-radius: 30px;
     font-family: 'Neue Montreal Regular';
@@ -247,9 +247,22 @@ body{
     background: white;
     float: left;
     height: 600px;
+    justify-content: center;
 }
 
-/* TESTEMONIALS SECTION */
+.lavander .image{
+    background: url('../images/rosmaninho500g.svg') no-repeat top center;
+    background-size: cover;
+    width: 50%;
+}
+
+.multifloral .image{
+    background: url('../images/img1.png') no-repeat top center;
+    background-size: cover;
+    width: 50%;
+}
+
+/* TESTEMONIALS SECTION - HOMEPAGE */
 .testemonials{
     background-color: white;
     width: 90%;
@@ -289,6 +302,18 @@ body{
     margin-bottom: 0;
 }
 
+.slick-prev:before {
+    background: url(../images/arrow_testemonials_left.svg);
+    color: transparent;
+    font-size: 32px;
+}
+  
+  .slick-next:before {
+    background: url(../images/arrow_testemonials_right.svg);
+    color: transparent;
+    font-size: 32px;
+}
+
 /* BENEFITS SECTION */
 .benefits{
     background-color: #CFC1AB;
@@ -298,8 +323,13 @@ body{
 }
 
 .benefits-columns{
-    width: 70%;
-    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 20px;
+}
+
+.benefits-columns .content{
+    margin-top: 30px;
 }
 
 .benefits-columns .col-1,
@@ -311,10 +341,23 @@ body{
     margin: 0 20px;
 }
 
-.benefits-columns img{
-    width: 100%;
+.benefits-columns .col-1 .image,
+.benefits-columns .col-4 .image{
+    background: url('../images/100-transparent.svg') no-repeat top center;
+    background-size: cover;
     height: 200px;
-    background-color: white;
+}
+
+.benefits-columns .col-2 .image{
+    background: url('../images/50-transparent.svg') no-repeat top center;
+    background-size: cover;
+    height: 200px;
+}
+
+.benefits-columns .col-3 .image{
+    background: url('../images/0-transparent.svg') no-repeat top center;
+    background-size: cover;
+    height: 200px;
 }
 
 .benefits-columns div h3{
@@ -337,7 +380,6 @@ body{
 .footer{
     background: #F0E7D1;
     width: 100%;
-    height: 360px;
     float: left;
     bottom: 0; 
     left: 0; 
@@ -374,7 +416,7 @@ body{
     width: 50%;
     float: left;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .copyright span{
@@ -426,10 +468,9 @@ body{
     cursor: pointer;
 }
 
-
+/* MENU MOBILE */
 .menu-mobile{
     display: none;
-
 }
 
 .menu-mobile-content{
@@ -444,24 +485,43 @@ body{
     margin-top: 0px;
 }
 
-/* SE O ECRÃ TIVER NO MÁX 1180px*/
-@media screen and (max-width:1180px) {
+/* SE O ECRÃ TIVER NO MÁX 1300px */
+@media screen and (max-width:1300px) {
     .header{
         background-color: #F0E7D1;
-        width: calc(50% - 20px);
+        width: calc(100% - 50px);
+    }
+
+    .subhero-section .content{
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+    }
+
+    .subhero-section .image{
+        width: 100vw;
+    }
+
+    .benefits-columns .col-1, .benefits-columns .col-2, .benefits-columns .col-3, .benefits-columns .col-4{
+        width: calc(50% - 10px);
+        float: left;
+        margin: 0px 5px;
     }
 
     .menu-mobile{
-        display: block;
+        display: none;
     }
 
     .menu-desktop{
-        display: none;
+        display: block;
+    }
+
+    .wrapper{
+        width: 100vw;
     }
 }
 
-/* SE O ECRÃ TIVER NO MÁX 750px*/
-@media screen and (max-width:750px) {
+/* SE O ECRÃ TIVER NO MÁX 900px */
+@media screen and (max-width:900px) {
     .header{
         background-color: #F0E7D1;
         width: calc(100% - 60px);
@@ -474,4 +534,292 @@ body{
     .menu-desktop{
         display: none;
     }
+
+    .wrapper{
+        width: calc(100% - 60px);
+    }
+}
+
+/* MEL */
+.hero-cream header{
+    background-color: #F0E7D1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    position: fixed;
+}
+
+.hero-cream nav li{
+    width: 120px;
+    float: left;
+    text-align: center;
+}
+
+.hero-cream nav li a{
+    color: #000;
+}
+
+.hero-cream nav li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero-cream nav{
+    width: 100%;
+}
+
+.hero-cream{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    color: black;
+    font-size: 48px;
+    position: relative;
+    line-height: 110%;
+}
+
+.hero-cream .hero-content{
+    margin: 180px;
+    width: 80%;
+}
+
+.hero-cream .text-content p{
+    font-size: 16px;
+    font-family: 'Montserrat Regular';
+    margin-top: 40px;
+    line-height: 160%;
+}
+
+.hero-cream .images{
+    margin-top: 30px;
+}
+
+.button-idioma-white{
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 20px;
+    padding: 5px 20px;
+    margin-left: 5px;
+    background-color: transparent;
+    color: #000;
+    border: 0.5px solid #000;
+    cursor: pointer;
+}
+
+.button-idioma-white:hover{
+    background-color: white;
+    color: black;
+}
+
+.button-cream{
+    margin-top: 50px;
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 30px;
+    padding: 5px 24px;
+    border: none;
+    color: #fff;
+    background-color: #CFC1AB;
+    margin: 16px 90px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 165px;
+}
+
+.button-cream:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.button-cream p{
+    float: left;
+}
+
+.button-cream img{
+    margin-right: -10px;
+}
+
+.product-image{
+    width: calc(50% - 20px);
+    margin: 0 10px;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.product-image .image{
+    height: 380px;
+    width: 100%;
+}
+
+.product-image .lavander{
+    background: url('../images/rosmaninho500g_mel.svg') no-repeat top center;
+}
+
+.product-image .multifloral{
+    background: url('../images/multifloral500g_mel.svg') no-repeat top center;
+}
+
+/* POLÍTICAS */
+.legal-content{
+    width: calc(100% - 120px);
+    text-align: justify;
+    margin: 180px 60px;
+}
+
+.legal-title{
+    text-align: center;
+}
+
+.legal-content p{
+    font-size: 16px;
+    font-family: 'Montserrat Regular';
+    margin-top: 40px;
+    line-height: 160%;
+}
+
+.legal-content p span{
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.legal-content .bold{
+    font-family: 'Montserrat Semi Bold';
+    font-size: 16px;
+}
+
+.legal-content .italic{
+    font-family: 'Montserrat Italic';
+}
+
+/* SOBRE NÓS */
+.about-us-content {
+    width: 100%;
+    margin: 0;
+    float: left;
+}
+
+.about-us-content .image{
+    background: url('../images/img2.png') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.about-us .image{
+    background: url('../images/img3.png') no-repeat top center;
+    background-size: cover;
+    width: 50%;
+}
+
+.about-us-2 .image{
+    background: url('../images/img4.png') no-repeat top center;
+    background-size: cover;
+    width: 50%;
+}
+
+.about-us-content .text{
+    width: calc(100% - 400px);
+    padding: 90px 200px;
+}
+
+.about-us-content p{
+   font-family: 'Neue Montreal Regular';
+   text-align: center;
+   font-size: 24px;
+   line-height: 140%;
+}
+
+.about-us-content p b{
+    font-family: 'Neue Montreal Medium';
+}
+
+.about-us-content .signature{
+    font-family: 'Neue Montreal Bold';
+}
+
+.signature span{
+    font-family: 'Neue Montreal Light Italic';
+}
+
+.hero-about header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    position: fixed;
+}
+
+.hero-about nav li{
+    width: 120px;
+    float: left;
+    text-align: center;
+}
+
+.hero-about nav li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hero-about nav{
+    width: 100%;
+}
+
+.hero-about{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    color: white;
+    font-size: 48px;
+    position: relative;
+    line-height: 110%;
+}
+
+.contact-section{
+    float: left;
+    background: #fff;
+    width: calc(100% - 200px);
+    padding: 90px 100px;
+    text-align: center;
+}
+
+.contact-section .text{
+    font-size: 24px;
+    line-height: 160%;
+    font-family: 'Neue Montreal Medium';
+}
+
+.contact-section .text span{
+    font-family: 'Neue Montreal Regular';
+}
+
+/* CONTACTO */
+
+.contacts{
+    margin-top: 40px;
+    width: 100%;
+    height: 600px;
+}
+
+.form{
+    width: 70%;
+    background-color: red;
+    height: 600px;
+    float: left;
+}
+
+.other-contacts{
+    width: 30%;
+    background-color: blue;
+    height: 600px;
+    float: left;
 }
