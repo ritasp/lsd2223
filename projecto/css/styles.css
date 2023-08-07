@@ -803,23 +803,457 @@ body{
 }
 
 /* CONTACTO */
-
 .contacts{
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
     height: 600px;
+    font-size: 14px;
+    font-family: 'Montserrat Regular';
+    justify-content: center;
+    display: flex;
+    line-height: 180%;
 }
 
 .form{
-    width: 70%;
-    background-color: red;
-    height: 600px;
+    width: calc(40% - 40px);
+    height: 500px;
     float: left;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0 20px;
+    margin-right: 40px;
 }
 
 .other-contacts{
     width: 30%;
-    background-color: blue;
     height: 600px;
     float: left;
+    line-height: 120%;
+}
+
+.other-contacts span{
+    font-family: 'Montserrat Semi Bold';
+    text-decoration: underline;
+}
+
+.other-contacts .image{
+    background: url('../images/img5.png') no-repeat center;
+    width: 100%;
+    height: 350px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+    font-family: 'Neue Montreal Regular';
+  }
+  
+.button-black{
+    font-size: 14px;
+    border-radius: 30px;
+    font-family: 'Neue Montreal Regular';
+    line-height: 30px;
+    padding: 5px 50px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 140px;
+    margin-top: 5px;
+}
+
+.button-black:hover{
+    background-color: #CFC1AB;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+.checkbox a{
+    color: #000;
+    text-decoration: underline;
+    font-family: 'Montserrat Semi Bold';
+    cursor: pointer;
+}
+
+/* MEL DE ROSMANINHO E MULTIFLORAL */
+.product-details{
+    background: linear-gradient(180deg, #CFC1AB 44.92%, #D9D7D5 100%);
+    height: 2150px;
+}
+
+.product-name{
+    color: white;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Neue Montreal Bold';
+    padding: 170px 0 30px 40px;
+    width: calc(100% - 40px);
+}
+
+.product-name-2{
+    color: white;
+    text-align: right;
+    font-size: 100px;
+    font-family: 'Neue Montreal Bold';
+    padding: 150px 40px 145px 0;
+    float: right;
+    width: 100%;
+}
+
+.product-info{
+    height: 600px;
+    width: 100%;
+    float: left;
+}
+
+.product-info .image{
+    width: calc(33.33% - 40px);
+    background: url('../images/planta_rosmaninho.svg') no-repeat right;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.product-info .image2{
+    width: calc(33.33% - 40px);
+    background: url('../images/rosmaninho500g_mask.svg') no-repeat center;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: -100px;
+}
+
+.product-description{
+    width: calc(33.33% - 40px);
+    height: 600px;
+    float: left;
+    font-family: 'Neue Montreal Light';
+    font-size: 24px;
+    line-height: 150%;
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+}
+
+.product-description2{
+    width: calc(33.33% - 40px);
+    height: 600px;
+    float: left;
+    font-family: 'Neue Montreal Light';
+    font-size: 24px;
+    line-height: 150%;
+    text-align: right;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.product-info .image3{
+    width: calc(33.33% - 40px);
+    background: url('../images/multifloral500g_mask.svg') no-repeat right;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: 100px;
+    margin-left: -35px;
+    margin-top: 100px;
+}
+
+.product-info .image4{
+    width: calc(33.33% - 40px);
+    background: url('../images/planta_esteva.svg') no-repeat center;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: -270px;
+}
+
+.other-info{
+    width: calc(100% - 400px);
+    height: 250px;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Montserrat Regular';
+    padding: 0 200px 0 200px;
+}
+
+.other-info b{
+    font-family: 'Montserrat Semi Bold';
+}
+
+.product-details i{
+    font-family: 'Neue Montreal Light Italic';
+}
+
+.benefits-honey{
+    background-color: #CFC1AB;
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+}
+
+.benefits-columns-honey{
+    height: fit-content;
+    width: fit-content;
+    margin: 0 20px;
+    padding: 0 310px 0 310px;
+}
+
+.benefits-columns-honey .content{
+    margin-top: 30px;
+}
+
+.benefits-columns-honey .col-1,
+.benefits-columns-honey .col-2,
+.benefits-columns-honey .col-3{
+    width: calc(33.33% - 80px);
+    float: left; 
+    margin: 0 40px;
+}
+
+.benefits-columns-honey .col-1 .image{
+    background: url('../images/benefit_img1.svg') no-repeat top center;
+    background-size: cover;
+    height: 380px;
+    width: 270px;
+}
+
+.benefits-columns-honey .col-2 .image{
+    background: url('../images/benefit_img2.svg') no-repeat top center;
+    background-size: cover;
+    height: 380px;
+    width: 270px;
+}
+
+.benefits-columns-honey .col-3 .image{
+    background: url('../images/benefit_img3.svg') no-repeat top center;
+    background-size: cover;
+    height: 380px;
+    width: 270px;
+}
+
+.benefits-columns-honey div h3{
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    font-size: 18px;
+}
+
+.benefits-columns-honey div p{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Montserrat Regular';
+}
+
+.benefits-health .content{
+    padding: 100px 50px;
+    width: calc(50% - 100px);
+    background: #F0E7D1;
+    float: left;
+    height: 700px;
+}
+
+.benefits-health h1{
+    font-size: 48px;
+    font-family: 'Neue Montreal Bold';
+    margin-top: 10px;
+    text-align: left;
+}
+
+.benefits-health p{
+    line-height: 180%;
+    margin-top: 40px;
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+    text-align: left;
+}
+
+.benefits-health b{
+    font-family: 'Montserrat Semi Bold';
+}
+
+.benefits-health .image{
+    width: 50%;
+    background: url('../images/img6.svg') no-repeat center;
+    float: left;
+    height: 900px;
+    justify-content: center;
+}
+
+.recipes{
+    background-color: #CFC1AB;
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+}
+
+.recipes-columns{
+    margin: 0 20px;
+    margin-top: 30px;
+}
+
+.recipes-columns .col-1,
+.recipes-columns .col-2,
+.recipes-columns .col-3{
+    width: calc(33.33% - 80px);
+    float: left; 
+    margin: 0 40px;
+}
+
+.recipes-columns div h2{
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+    font-family: 'Neue Montreal Medium';
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.recipes-columns .col-1 .flip-card-front{
+    background: url('../images/recipecard1_front.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+}
+
+.recipes-columns .col-1 .flip-card-front:hover{
+    background: url('../images/recipecard1_back.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+    transition: transform .6s;
+    transform: rotateY(180deg);
+}
+
+.recipes-columns .col-2 .flip-card-front{
+    background: url('../images/recipecard2_front.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+}
+
+.recipes-columns .col-2 .flip-card-front:hover{
+    background: url('../images/recipecard2_back.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+    transition: transform .6s;
+    transform: rotateY(180deg);
+}
+
+.recipes-columns .col-3 .flip-card-front{
+    background: url('../images/recipecard3_front.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+}
+
+.recipes-columns .col-3 .flip-card-front:hover{
+    background: url('../images/recipecard3_back.svg') no-repeat top center;
+    background-size: cover;
+    height: 637px;
+    transition: transform .6s;
+    transform: rotateY(180deg);
+}
+
+/* ADAPTAÇÃO MULTIFLORAL */
+.product-details2{
+    background: linear-gradient(180deg, #D9D7D5 44.92%, #9E917C 100%);
+    height: 2150px;
+}
+
+.product-info2{
+    height: 600px;
+    width: 100%;
+    float: left;
+}
+
+.product-details2 i{
+    font-family: 'Neue Montreal Light Italic';
+}
+
+.product-description3{
+    width: calc(33.33% - 40px);
+    height: 600px;
+    float: left;
+    font-family: 'Neue Montreal Light';
+    font-size: 24px;
+    line-height: 150%;
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+}
+
+.product-description4{
+    width: calc(33.33% - 40px);
+    height: 600px;
+    float: left;
+    font-family: 'Neue Montreal Light';
+    font-size: 24px;
+    line-height: 150%;
+    text-align: right;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.product-info2 .image{
+    width: calc(33.33% - 40px);
+    background: url('../images/planta_esteva2.svg') no-repeat center;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: 190px;
+}
+
+.product-info2 .image2{
+    width: calc(33.33% - 40px);
+    background: url('../images/multifloral500g_mask.svg') no-repeat right;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: -190px;
+}
+
+.product-info2 .image3{
+    width: calc(33.33% - 40px);
+    background: url('../images/rosmaninho500g_mask.svg') no-repeat right;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-left: 100px;
+    margin-left: -30px;
+    margin-top: 100px;
+}
+
+.product-info2 .image4{
+    width: calc(33.33% - 40px);
+    background: url('../images/planta_rosmaninho2.svg') no-repeat center;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: -215px;
+}
+
+.benefits-health .image2{
+    width: 50%;
+    background: url('../images/img7.svg') no-repeat center;
+    float: left;
+    height: 900px;
+    justify-content: center;
 }

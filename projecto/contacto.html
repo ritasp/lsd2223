@@ -87,15 +87,44 @@
                 </div>
 
                 <div class="contacts">
-                    <div class="form"></div>
-    
-                    <div class="other-contacts"></div>
+                    
+                    <form class="form" action="enviar_formulario.php" method="POST">
+                        <label for="nome">Nome*</label>
+                        <input type="text" id="nome" name="nome" required>
+                      
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="email" required>
+
+                        <label for="assunto">Assunto*</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                      
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" required placeholder="Escreva aqui a sua mensagem..." style="height:150px"></textarea>
+                        
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Li e aceito a <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+                        </label>
+
+                        <button type="submit" class="button-black">ENVIAR MENSAGEM</button>
+                    </form>
+
+
+                    <div class="other-contacts">
+                        <p>Pode contactar-nos também através<br> do nosso email ou Instagram:<br>
+                            <br>
+                            Email<br>
+                            <span>hello@corticodoguadiana.com</span><br>
+                            <br>
+                            Instagram<br>
+                            <span>@corticodoguadiana</span><br>
+                        </p>
+                        <div class="image"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
 
         <footer class="footer">
             <div class="full-content">
