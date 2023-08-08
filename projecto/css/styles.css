@@ -1257,3 +1257,48 @@ input[type=checkbox]{
     height: 900px;
     justify-content: center;
 }
+
+/* FAQ */
+.faq{
+    padding: 0 40px;
+}
+
+.faq-title{
+    font-family: 'Neue Montreal Medium';
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.faq-question{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Neue Montreal Regular';
+    font-size: 16px;
+    line-height: 200%;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.faq-answer{
+    display: none;
+    font-family: 'Montserrat Light';
+    font-size: 14px;
+    line-height: 150%;
+    text-align: left;
+}
+
+.arrow{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    background-image: url('../images/arrow.svg');
+    background-size: cover;
+    float: right;
+    z-index: 1;
+}
