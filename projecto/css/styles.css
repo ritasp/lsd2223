@@ -1291,7 +1291,6 @@ input[type=checkbox]{
 }
 
 .arrow{
-    display: inline-block;
     width: 10px;
     height: 10px;
     margin-left: 5px;
