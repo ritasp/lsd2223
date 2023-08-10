@@ -13,14 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $assunto = $_POST['assunto'];
     $mensagem = $_POST['mensagem'];
 
-    $mail = new PHPMailer();
+    $mail = new PHPMailer(true);
 
-    // SMTP Configuration
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'corticodoguadiana@gmail.com';
-    $mail->Password = 'pass';
+    $mail->Password = 'iuygdpuzcrbjxmtq';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
@@ -30,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mail->isHTML(true);
     $mail->Subject = $assunto;
-    $mail->Body = 'Nome: ' . $nome . '<br>Email: ' . $email . '<br>Mensagem: ' . $mensagem;
+    $mail->Body = 'Nome: ' . $nome . '<br>' 'Email: ' . $email . '<br>' 'Mensagem: ' . $mensagem;
 
     if ($mail->send()) {
         echo 'Obrigado(a) pela sua mensagem!';
